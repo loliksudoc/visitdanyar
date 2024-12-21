@@ -110,3 +110,86 @@ footer {
     padding: 10px 0;
     margin-top: 40px;
 }
+
+/* Медиа-запросы для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .contact h2,
+    .products h2,
+    .location h2 {
+        font-size: 24px;
+    }
+
+    .contact p,
+    .location p {
+        font-size: 16px;
+    }
+
+    .products {
+        flex-direction: column; /* Столбцы для маленьких экранов */
+        align-items: center;
+    }
+
+    .product {
+        width: 80%; /* Блоки продуктов занимают большую часть экрана */
+        margin-bottom: 20px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+    }
+
+    .product-img {
+        max-height: 150px; /* Уменьшаем размер изображения на мобильных */
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Медиа-запросы для экранов меньше 480px (смартфоны) */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .contact h2,
+    .products h2,
+    .location h2 {
+        font-size: 20px;
+    }
+
+    .contact p,
+    .location p {
+        font-size: 14px;
+    }
+
+    .products {
+        flex-direction: column;
+        gap: 10px; /* Уменьшаем промежутки между продуктами */
+    }
+
+    .product {
+        width: 100%; /* На маленьких экранах каждый продукт занимает 100% ширины */
+    }
+
+    .product h3 {
+        font-size: 18px;
+    }
+
+    .product-img {
+        max-height: 120px; /* Еще больше уменьшаем изображения на маленьких экранах */
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
