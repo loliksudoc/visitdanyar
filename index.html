@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто запчасти</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .contact, .location, .products {
+            margin-bottom: 20px;
+        }
+        .products img {
+            width: 200px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product {
+            margin: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Авто запчасти</h1>
+    </header>
+
+    <div class="container">
+        <!-- Контактная информация -->
+        <div class="contact">
+            <h2>Контакты</h2>
+            <p>Телефон 1: <a href="tel:+787771634747">+7 877 716 34 747</a></p>
+            <p>Телефон 2: <a href="tel:+787471634746">+7 874 716 34 746</a></p>
+        </div>
+
+        <!-- Продукция -->
+        <div class="products">
+            <h2>Продукция</h2>
+
+            <div class="product">
+                <h3>Peugeot</h3>
+                <img src="https://ibb.co/brySfBd" alt="Peugeot">
+            </div>
+
+            <div class="product">
+                <h3>Renault</h3>
+                <img src="https://ibb.co/wpXmCdK" alt="Renault">
+            </div>
+
+            <div class="product">
+                <h3>LARGUS</h3>
+                <img src="https://ibb.co/2q63Dn1" alt="LARGUS">
+            </div>
+        </div>
+
+        <!-- Местоположение -->
+        <div class="location">
+            <h2>Наше местоположение</h2>
+            <p>Рынок "Кенжехан", 9 ряд, 27 конт</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Авто запчасти</p>
+    </footer>
+
+</body>
+</html>
