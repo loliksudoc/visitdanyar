@@ -64,6 +64,19 @@ header h1 {
     text-decoration: underline;
 }
 
+/* Добавление стилей для цитаты */
+.quote {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    border: 1px solid #ddd;
+}
+
 .products {
     display: flex;
     justify-content: center;
@@ -156,4 +169,45 @@ footer {
         max-height: 150px;
     }
 
-   
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .contact h2,
+    .products h2,
+    .location h2 {
+        font-size: 20px;
+    }
+
+    .contact p,
+    .location p {
+        font-size: 14px;
+    }
+
+    .products {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .product h3 {
+        font-size: 18px;
+    }
+
+    .product-img {
+        max-height: 120px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
