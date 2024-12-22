@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +10,19 @@ body {
     color: #333;
 }
 
+header {
+    background-image: url('https://i.ibb.co/BtyjdTw/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
@@ -18,19 +30,6 @@ body {
     padding: 20px;
 }
 
-/* Шапка */
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-/* Контакты */
 .contact {
     background-color: #fff;
     padding: 20px;
@@ -49,17 +48,15 @@ h1 {
     color: #3498db;
     text-decoration: none;
 }
-
 .contact a:hover {
     text-decoration: underline;
 }
 
-/* Продукция */
 .products {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .product {
@@ -77,14 +74,13 @@ h1 {
 }
 
 .product-img {
-    width: 100%; /* Устанавливаем 100% ширину */
-    height: auto; /* Высота автоматически подстраивается */
-    max-height: 200px; /* Ограничиваем максимальную высоту */
-    object-fit: contain; /* Сохраняем пропорции */
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
     border-radius: 8px;
 }
 
-/* Местоположение */
 .location {
     background-color: #fff;
     padding: 20px;
@@ -102,7 +98,6 @@ h1 {
     font-size: 18px;
 }
 
-/* Футер */
 footer {
     background-color: #333;
     color: white;
@@ -111,7 +106,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Медиа-запросы для мобильных устройств */
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
@@ -133,12 +127,12 @@ footer {
     }
 
     .products {
-        flex-direction: column; /* Столбцы для маленьких экранов */
+        flex-direction: column;
         align-items: center;
     }
 
     .product {
-        width: 80%; /* Блоки продуктов занимают большую часть экрана */
+        width: 80%;
         margin-bottom: 20px;
     }
 
@@ -147,7 +141,7 @@ footer {
     }
 
     .product-img {
-        max-height: 150px; /* Уменьшаем размер изображения на мобильных */
+        max-height: 150px;
     }
 
     footer p {
@@ -155,7 +149,6 @@ footer {
     }
 }
 
-/* Медиа-запросы для экранов меньше 480px (смартфоны) */
 @media screen and (max-width: 480px) {
     header h1 {
         font-size: 24px;
@@ -174,11 +167,11 @@ footer {
 
     .products {
         flex-direction: column;
-        gap: 10px; /* Уменьшаем промежутки между продуктами */
+        gap: 10px;
     }
 
     .product {
-        width: 100%; /* На маленьких экранах каждый продукт занимает 100% ширины */
+        width: 100%;
     }
 
     .product h3 {
@@ -186,7 +179,7 @@ footer {
     }
 
     .product-img {
-        max-height: 120px; /* Еще больше уменьшаем изображения на маленьких экранах */
+        max-height: 120px;
     }
 
     footer p {
