@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -11,7 +12,7 @@ body {
 }
 
 header {
-    background-image: url('images/banner.jpg');
+    background-image: url('images/banner.jpg'); /* Путь к картинке в папке images */
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -37,18 +38,22 @@ header h1 {
     border-radius: 8px;
     margin-bottom: 20px;
 }
+
 .contact h2 {
     font-size: 28px;
     margin-bottom: 10px;
 }
+
 .contact p {
     font-size: 18px;
     margin: 5px 0;
 }
+
 .contact a {
     color: #3498db;
     text-decoration: none;
 }
+
 .contact a:hover {
     text-decoration: underline;
 }
