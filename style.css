@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-image: url('images/banner.jpg');; 
+    background-image: url('images/banner.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -23,6 +23,7 @@ header {
 header h1 {
     font-size: 48px;
     font-weight: bold;
+    display: none; /* Скрываем заголовок в баннере */
 }
 
 .container {
@@ -37,6 +38,11 @@ header h1 {
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+}
+
+.contact h1 {
+    font-size: 32px;
+    margin-bottom: 20px; /* Отступ от нового заголовка */
 }
 
 .contact h2 {
@@ -150,45 +156,4 @@ footer {
         max-height: 150px;
     }
 
-    footer p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 24px;
-    }
-
-    .contact h2,
-    .products h2,
-    .location h2 {
-        font-size: 20px;
-    }
-
-    .contact p,
-    .location p {
-        font-size: 14px;
-    }
-
-    .products {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .product {
-        width: 100%;
-    }
-
-    .product h3 {
-        font-size: 18px;
-    }
-
-    .product-img {
-        max-height: 120px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-}
+   
