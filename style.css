@@ -12,12 +12,12 @@ body {
 }
 
 .lolikimage {
-    
-    background-size: 1000px;
-    background-position: center;
-    text-align: center;
-    color: white;
-    padding: 100px;
+    background-image: url('banner.jpg'); /* Путь к изображению */
+    background-size: 120% 120%; /* Увеличивает изображение на 120% по ширине и высоте */
+    background-position: center; /* Центрирует изображение */
+    text-align: center; /* Выравнивает текст по центру */
+    color: white; /* Цвет текста */
+    padding: 100px; /* Отступы сверху и снизу */
 }
 
 header h1 {
