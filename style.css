@@ -11,13 +11,13 @@ body {
     color: #333;
 }
 
-lolikimage {
+.lolikimage {
     
-    background-size: cover;
+    background-size: 1000px;
     background-position: center;
     text-align: center;
     color: white;
-    padding: 100px 0;
+    padding: 100px;
 }
 
 header h1 {
